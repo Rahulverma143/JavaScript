@@ -1,0 +1,95 @@
+Let, Const and Var:
+
+    (i) var -> Variables can be re-declared & updated . A global scope variables.
+    (functional variables or global variables)
+    (var intialised)
+    (re-declaration allowed)(fixed scoped or global scope)
+    (re-assignment allow)
+
+    (ii) Let -> Variables cannot be re-declared but can be updated. A block Scope variables.
+
+    (block variables)
+    (Let intialised)
+    (re-declared not allowed)( it is block scoped)
+    (re-assignment allow in let varibles)
+
+
+    (iii) Const -> Variables cannot be re-declared or updated. A block scope variables.
+    (const intialised)
+    (re-declared not allowed)(block scoped)
+    (re-assignment not allowed)
+
+    == Variables ==
+    Mutation = Var and Let
+    Immutation = Const (who doesn-t change(constant))
+
+
+1. Global Execution Context (GEC) -> the area within all varibles, functions, closure, scope  access time, keywords literals where everything is defined is called GEC.
+( vo area jiske ander sare variables, function, scope, access time, life time, keywords, litterals yeh sub define kiye jata hai )
+(It is created automatically by the JS engine when you run a program.)
+
+2. Temporary Dead Zone =>  ase variables ki ik asi state hai  jab kisi variables ko initialize kiye bine usko access ke leta hai  uss time agr voh variables Var keyword declared hota hai baad me toh uss concept ko hum hosting bolta hai bahi aur  boh let ja Const variables declared hota hai baad me toh hume reference error milta hai.
+
+// console.log(a); // reference error // temporary dead zone
+// let a= 4; 
+
+(identifier A cannot be access before its inilizations).
+
+3. Scope => JavaScript me 2 trike ka  scope hota hai (Two types of Scope in JavaScript)
+Global and Local scope 
+
+i) Global scope ko vanilla JS me window object bolta hai  aur node js me System object bolta hai.
+
+Function Scope => Functin scope ka ander bna variables sirf usi function tak hi access ke skta hai aur function accessibility area ko stack kheta hai.
+
+ii) Block Scope => Let and Const se declared kiye jana walla variables ko Block scope bolta hai .
+block Scope ka ana ka karan Var keywords se declared kiye jana walla variables global scope se function scope me change ho jate hai. 
+
+1. What is Scope in JavaScript?
+Scope is the area or context where variables are accessible or visible in your code.
+
+💡 In simple terms: Where can you use a variable? That’s its scope.
+             
+Types of Scope in JavaScript:
+
+1. Global Scope
+
+Variables declared outside any function or block.
+Accessible anywhere in your code.
+
+// let name = "Rahul";
+
+// function greet() {
+//   console.log(name); // ✅ Accessible
+// }
+// greet();
+// console.log(name);   // ✅ Accessible
+
+2. Function Scope (Local Scope)
+
+Variables declared inside a function.
+Accessible only inside that function.
+
+// function test() {
+//   let x = 10;
+//   console.log(x); // ✅ Accessible here
+// }
+// test();
+// console.log(x); // ❌ Error: x is not defined
+
+3. Block Scope (ES6)
+Variables declared with let or const inside {} (block) are limited to that block.
+
+// {
+//   let a = 5;
+//   const b = 10;
+//   console.log(a, b); // ✅ Accessible here
+// }
+// console.log(a); // ❌ Error
+// console.log(b); // ❌ Error
+
+var is not block-scoped, it is function-scoped:
+// {
+//   var x = 100;
+// }
+// console.log(x); // ✅ 100 (because `var` ignores block)
