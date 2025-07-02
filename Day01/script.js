@@ -47,3 +47,20 @@
 
 // console.log(typeof test);
 // var test = function() { return 5; };
+
+
+// function createIncrementer() {
+//   let count = 0;
+//   return function() {
+//     return ++count;
+//   };
+// }
+
+// let increment = createIncrementer();
+// console.log(increment());  //1
+// console.log(increment()); //2
+
+
+
+console.log(foo);
+var foo = 10;  // undefiined
