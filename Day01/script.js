@@ -62,5 +62,9 @@
 
 
 
-console.log(foo);
-var foo = 10;  // undefiined
+// console.log(foo);
+// var foo = 10;  // undefiined
+
+
+
+

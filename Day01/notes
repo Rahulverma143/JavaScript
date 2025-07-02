@@ -96,3 +96,7 @@ var is not block-scoped, it is function-scoped:
 
 
 // lexical scope 
+
+
+
+// variable : agar function scope me bna variables global execution me bna variables ka sath match karte hai toh global execution ko varibles ko shadow ho jata hai , toh uss concept ko variables shadow kheta hai
