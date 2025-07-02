@@ -36,3 +36,14 @@
 // let a = 6;
 // let a;
 // console.log(a)  // undefined
+
+
+// let a = 4;
+// function abc(){
+//     console.log(a);
+// } 
+// abc();
+
+
+// console.log(typeof test);
+// var test = function() { return 5; };

@@ -43,7 +43,7 @@ i) Global scope ko vanilla JS me window object bolta hai  aur node js me System 
 Function Scope => Functin scope ka ander bna variables sirf usi function tak hi access ke skta hai aur function accessibility area ko stack kheta hai.
 
 ii) Block Scope => Let and Const se declared kiye jana walla variables ko Block scope bolta hai .
-block Scope ka ana ka karan Var keywords se declared kiye jana walla variables global scope se function scope me change ho jate hai. 
+block Scope ka ana ka karan Var keywords se declared kiye jana walla variables global scope se function scope me change ho jate hai.    
 
 1. What is Scope in JavaScript?
 Scope is the area or context where variables are accessible or visible in your code.
@@ -93,3 +93,6 @@ var is not block-scoped, it is function-scoped:
 //   var x = 100;
 // }
 // console.log(x); // ✅ 100 (because `var` ignores block)
+
+
+// lexical scope 
