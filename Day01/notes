@@ -100,3 +100,9 @@ var is not block-scoped, it is function-scoped:
 
 
 // variable : agar function scope me bna variables global execution me bna variables ka sath match karte hai toh global execution ko varibles ko shadow ho jata hai , toh uss concept ko variables shadow kheta hai
+
+
+
+// lambda function not return object 
+
+agr object return krna hai to hum {} usa arow function bolta hai and hum tab return krna hoga 

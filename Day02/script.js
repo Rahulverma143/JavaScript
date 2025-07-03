@@ -6,6 +6,6 @@ function Outer()
         console.log(a);
         var a = 5;
     }
-    Inner ();
+    Inner();
 }
 Outer();
