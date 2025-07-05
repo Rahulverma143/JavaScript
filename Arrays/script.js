@@ -69,3 +69,8 @@
 
 
 
+
+// const name = ["Rahul", "Verma", "Manotra"];
+// const word = name.slice(0, -1).join(" ")
+
+// console.log(word);
