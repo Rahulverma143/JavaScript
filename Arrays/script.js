@@ -75,15 +75,25 @@
 
 // console.log(word);
 
-const fruits = ["Apple", "Banana", "cherry"];
+// const fruits = ["Apple", "Banana", "cherry"];
 
-console.log(fruits);
-console.log(fruits.push("grapes"));
-console.log(fruits);
-console.log(fruits.shift());
-console.log(fruits);
-console.log(fruits.unshift("kiwi"));
-console.log(fruits);
-console.log(fruits.pop());
-console.log(fruits);
+// console.log(fruits);
+// console.log(fruits.push("grapes"));
+// console.log(fruits);
+// console.log(fruits.shift());
+// console.log(fruits);
+// console.log(fruits.unshift("kiwi"));
+// console.log(fruits);
+// console.log(fruits.pop());
+// console.log(fruits);
 
+//  factorial of a number 
+
+function factorial(n) {
+  if (n === 0 || n === 1) {
+    return 1;
+  }
+  return n * factorial(n - 1);
+}
+
+console.log(factorial(5)); 
