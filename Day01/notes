@@ -23,12 +23,23 @@ Let, Const and Var:
     Mutation = Var and Let
     Immutation = Const (who doesn-t change(constant))
 
+//   => outer function variables are visible to inner function  but not the outer  way around  
 
+  => Clouser ik asa functon hai jo apne parent function ka variables ko yaad rakhta hai even jab parent function execute ho chuka hota hai.
+
+  or
+
+//   => Closure: Remembers the variables form its outer (parent) function even after the parent function has finished executing.
+
+ GEC=> (It is created automatically by the JS engine when you run a program.)
 1. Global Execution Context (GEC) -> the area within all varibles, functions, closure, scope  access time, keywords literals where everything is defined is called GEC.
 ( vo area jiske ander sare variables, function, scope, access time, life time, keywords, litterals yeh sub define kiye jata hai )
-(It is created automatically by the JS engine when you run a program.)
 
 2. Temporary Dead Zone =>  ase variables ki ik asi state hai  jab kisi variables ko initialize kiye bine usko access ke leta hai  uss time agr voh variables Var keyword declared hota hai baad me toh uss concept ko hum hosting bolta hai bahi aur  boh let ja Const variables declared hota hai baad me toh hume reference error milta hai.
+
+// Temporary Dead Zone is a state where a variable exists but cannot be accessed until it is initialized.
+// If the variable is declared using the **var** keyword, and you try to access it before its declaration, JavaScript allows it (but the value will be undefined). This behavior is due to hoisting.
+// However, if the variable is declared using **let** or **const**, and you try to access it before its declaration, JavaScript will throw a ReferenceError.
 
 // console.log(a); // reference error // temporary dead zone
 // let a= 4; 

@@ -100,11 +100,11 @@
 
 
 
-const employees = ["Rahul verma", "verma manotra"];
-let newname = employees.map(
-  (emp) => emp.split(" ")[0] + " " + emp.split(" ")[1].toUpperCase()
-);
-console.log(newname);
+// const employees = ["Rahul verma", "verma manotra"];
+// let newname = employees.map(
+//   (emp) => emp.split(" ")[0] + " " + emp.split(" ")[1].toUpperCase()
+// );
+// console.log(newname);
 
 
 
@@ -129,3 +129,94 @@ console.log(newname);
 // });
 // console.log(ans);
 
+// const arr = [1,2,3,4,5,6,7];
+// let ans = arr.slice(0 -1);
+// console.log(arr);
+
+
+// iterate ----------------------
+// string convert into character -----------------------
+
+// const str = "Rahul";
+// const ans = str.split("");
+// console.log(ans);
+
+// reverse this string --------------------------
+
+// const str = "Rahul";
+// const ans = str.split("").reverse();
+// console.log(ans);
+
+
+// reverse this  // luhar outpur ----------------------------------
+// const str = "Rahul";
+// const ans = str.split("").reverse().join("");
+// console.log(ans);
+
+
+
+
+// last three element output [4,5,6]
+// reverse this elements
+// const str = [1,2,3,4,5,6];
+// // let ans = str.slice(-3); [4,5,6]
+// let ans = str.slice(-3).reverse(); // [6,5,4]
+
+// console.log(ans);
+
+// ----------------------------------
+
+// const str = "javascript is the wrost langugae";
+// // const ans = str.split(" ");
+// // const ans = str.split(" ").reverse();
+// const ans = str.split(" ").reverse().join(" ");
+// console.log(ans);
+
+// ------------------------------------------ 
+
+// const str = "code";
+// const ans = str.split("").reverse().join("-");
+// console.log(ans);
+
+// ------------------------------------
+
+// const arr1 = [1,2,3,4,5];
+// const arr2 = [6,7,8,9,10];
+// // // merge 
+// // const arr3 = [...arr1, ...arr2];
+// // console.log(arr3);
+
+// const ans = arr1.push(...arr2);
+// console.log(ans);
+// console.log(arr1);
+
+
+
+// // pallindrome number 
+
+// // const str = "rahul";
+// const str = "maedam";
+// const pallindrome = str.split("").reverse().join("");
+// pallindrome ? console.log("yes") : console.log("no");
+
+// ---------------------------------------------------------------
+
+// const sentence = "Javascript is the wrost language";
+// const ans = sentence.split(" ");
+// console.log(ans);
+// // const result = ans.map((s) =>s.split(""));
+// const result = ans.map((s) => s.split("").reverse().join("")).join(" ");
+
+// console.log(result);
+
+// ---------------------------------------------
+
+// map and filter difference --------------------
+
+// const arr = ["apple", 11212, "banana", 14, "kiwi", 857, "rose", 4789];
+// console.log(typeof arr);  // object
+
+// const type = arr.filter((ele) => typeof ele === "number").reverse();  // number reverse
+// // const type = numarr.filter((ele) => typeof ele === "number").reverse();
+// const res = arr.map((ele) => (typeof ele === "number"? numarr.shift() : ele));
+// console.log(res);

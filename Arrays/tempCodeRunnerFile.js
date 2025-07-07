@@ -1,3 +1,5 @@
-const courses = ['math101', 'Eng102'];
-let courseId = courses.map((c) => `COURSE: ${c}`);
-console.log(courseId);
+const employees = ["Rahul verma", "verma manotra"];
+// let newname = employees.map(
+//   (emp) => emp.split(" ")[0] + " " + emp.split(" ")[1].toUpperCase()
+// );
+// console.log(newname);
