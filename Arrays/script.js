@@ -89,11 +89,34 @@
 
 //  factorial of a number 
 
-function factorial(n) {
-  if (n === 0 || n === 1) {
-    return 1;
-  }
-  return n * factorial(n - 1);
-}
+// function factorial(n) {
+//   if (n === 0 || n === 1) {
+//     return 1;
+//   }
+//   return n * factorial(n - 1);
+// }
 
-console.log(factorial(5)); 
+// console.log(factorial(5)); 
+
+
+
+
+
+
+// const employees = [
+//   "Thakur Rana Pratap",
+//   "Ravindra Jadejha",
+//   "Neel Nitin Mukesh",
+//   "Ravi Verma",
+//   "Rohan Kumar Verma",
+//   "Prajjal Dhar",
+//   "Muttu Swami Venu Gopal Iyer",
+// ];
+// let ans = employees.map((emp) => {
+//   const name = emp.split(" ");
+//   let nthindex = emp.split(" ").length - 1;
+//   return `${name.slice(0, -1).join(" ")} ${name[nthindex].toUpperCase()}`;
+// });
+// console.log(ans);
+
+
