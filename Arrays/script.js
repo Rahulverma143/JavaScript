@@ -103,6 +103,11 @@
 
 
 
+//  let s = "Rudra Pratap Singh";
+//  let name = s.split(" ");
+//  console.log(name.length-1);
+
+
 // const employees = [
 //   "Thakur Rana Pratap",
 //   "Ravindra Jadejha",
@@ -118,5 +123,4 @@
 //   return `${name.slice(0, -1).join(" ")} ${name[nthindex].toUpperCase()}`;
 // });
 // console.log(ans);
-
 
