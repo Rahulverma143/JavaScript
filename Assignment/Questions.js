@@ -52,5 +52,17 @@ const result = marks.map(mark => mark >= 40 ? 'Pass' : 'Fail');
 
 console.log(result);
 
+// --------------------------------------------------------------------------
+
+/* 6. Apply GST of 18% to Prices
+ [100, 200, 500] → [118, 236, 590]  */
+
+
+const prices = [100, 200, 500];
+
+const pricesWithGST = prices.map(price => price * 1.18);
+
+console.log(pricesWithGST);
+
 
 
