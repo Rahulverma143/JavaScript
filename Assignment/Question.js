@@ -24,3 +24,11 @@ console.log(arr1); //merge of ARR1 AND ARR2
 const str = "maedam";
 const pallindrome = str === str.split("").reverse().join("");
 pallindrome ? console.log("yes") : console.log("no");
+
+// ---------------------------------------------------------
+
+ const sentence = "Javascript is the wrost language";
+ const senarr = sentence.split(" ");
+ console.log(senarr);
+ const revsen = senarr.map((s) => s.split("").reverse().join(""));
+ console.log(revsen);
