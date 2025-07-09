@@ -17,3 +17,10 @@ const arr2 = [2, 3, 4, 5, 6];
 const ans = arr1.push(...arr2);
 console.log(ans); //length of total elements
 console.log(arr1); //merge of ARR1 AND ARR2
+
+// -----------------------------------------------------
+
+//pallindrome:
+const str = "maedam";
+const pallindrome = str === str.split("").reverse().join("");
+pallindrome ? console.log("yes") : console.log("no");
