@@ -1,7 +1,6 @@
  /* 1.  Add Course Code Prefix
  ['Math101', 'Eng102'] → ['COURSE: Math101', 'COURSE: Eng102'] */
 
-
 const courses = ['Math101', 'Eng102'];
 let courseId = courses.map((c) => `COURSE: ${c}`);
 console.log(courseId);
@@ -64,6 +63,7 @@ const pricesWithGST = prices.map(price => price * 1.18);
 
 console.log(pricesWithGST);
 
+// -------------------------------------------------------------------------
 
 /* 7. Attach SKU Prefix
  ['A123', 'B456'] → ['SKU-A123', 'SKU-B456'] */
@@ -73,6 +73,7 @@ const skuCodes = codes.map(code => 'SKU-' + code);
 
 console.log(skuCodes); // Output: ['SKU-A123', 'SKU-B456']
 
+//------------------------------------------------------------------------------
 
 /* 8. Create Cart Summary with Quantity 1
  ['Mouse', 'Keyboard'] → [{ item: 'Mouse', quantity: 1 }, { item: 'Keyboard', quantity: 1 }] */
@@ -161,3 +162,12 @@ const clients = ['reliance', 'tcs'];
 const capitalizedClients = clients.map(name =>  name.charAt(0).toUpperCase() + name.slice(1));
 console.log(capitalizedClients);
 // Output: ['Reliance', 'Tcs']
+
+
+/* 18. Format Client Codes
+ ['C01', 'C02'] → ['CLIENT-C01', 'CLIENT-C02'] */
+
+ const client = ['C01', 'C02'];
+client.map()
+const currentDate = new Date();
+// console.log(currentdate);
