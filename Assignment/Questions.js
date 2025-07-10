@@ -109,3 +109,55 @@ const batchYearNames = names.map(name => `${name} - 2020`);
 console.log(batchYearNames);
 // Output: ['Amit - 2020', 'Neha - 2020']
 
+/* 12. Generate Student Emails
+ ['Raj Verma', 'Kavita Rai'] → ['raj.verma@univ.com', 'kavita.rai@univ.com'] */
+
+ const students = ['Raj Verma', 'Kavita Rai'];
+
+const emails = students.map(name => {
+  const emailName = name.toLowerCase().replace(/\s+/g, '.');
+  return `${emailName}@univ.com`;});
+
+console.log(emails);
+// Output: ['raj.verma@univ.com', 'kavita.rai@univ.com']
+
+/* 13. Convert Subject Names to Uppercase
+ ['history', 'geography'] → ['HISTORY', 'GEOGRAPHY'] */
+
+const subjects = ['history', 'geography'];
+const upperSubjects = subjects.map(subject => subject.toUpperCase());
+console.log(upperSubjects);
+// Output: ['HISTORY', 'GEOGRAPHY']
+
+/*14. Student Roll Numbers Formatting
+ [101, 102] → ['Roll#101', 'Roll#102']  */
+
+const rollNumbers = [101, 102];
+const formattedRolls = rollNumbers.map(roll => `Roll#${roll}`);
+console.log(formattedRolls);
+// Output: ['Roll#101', 'Roll#102']
+
+/*15. Assign All Students to Same Section
+ ['S1', 'S2'] → [{ id: 'S1', section: 'A' }, { id: 'S2', section: 'A' }]  */
+
+ const student = ['S1', 'S2'];
+const assignedSections = student.map(id => ({id: id,section: 'A'}));
+console.log(assignedSections);
+// Output: [{ id: 'S1', section: 'A' }, { id: 'S2', section: 'A' }]
+
+/*16. Add Status to Leads
+ ['Lead1', 'Lead2'] → [{ name: 'Lead1', status: 'new' }, { name: 'Lead2', status: 'new' }] */
+
+const leads = ['Lead1', 'Lead2'];
+const leadStatus = leads.map(name => ({name: name,status: 'new'}));
+console.log(leadStatus);
+// Output: [{ name: 'Lead1', status: 'new' }, { name: 'Lead2', status: 'new' }]
+
+
+/*17. Client Name Capitalization
+ ['reliance', 'tcs'] → ['Reliance', 'Tcs'] */
+
+const clients = ['reliance', 'tcs'];
+const capitalizedClients = clients.map(name =>  name.charAt(0).toUpperCase() + name.slice(1));
+console.log(capitalizedClients);
+// Output: ['Reliance', 'Tcs']
