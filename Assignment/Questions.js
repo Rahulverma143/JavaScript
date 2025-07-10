@@ -65,4 +65,47 @@ const pricesWithGST = prices.map(price => price * 1.18);
 console.log(pricesWithGST);
 
 
+/* 7. Attach SKU Prefix
+ ['A123', 'B456'] → ['SKU-A123', 'SKU-B456'] */
+
+ const codes = ['A123', 'B456'];
+const skuCodes = codes.map(code => 'SKU-' + code);
+
+console.log(skuCodes); // Output: ['SKU-A123', 'SKU-B456']
+
+
+/* 8. Create Cart Summary with Quantity 1
+ ['Mouse', 'Keyboard'] → [{ item: 'Mouse', quantity: 1 }, { item: 'Keyboard', quantity: 1 }] */
+
+
+const products = ['Mouse', 'Keyboard'];
+const cartSummary = products.map(item => ({item: item,quantity: 1}));
+console.log(cartSummary);
+// Output: [{ item: 'Mouse', quantity: 1 }, { item: 'Keyboard', quantity: 1 }]
+
+
+/* 9 Add Availability Status
+ ['Item1', 'Item2'] → [{ name: 'Item1', available: true }, { name: 'Item2', available: true }] */
+
+ const items = ['Item1', 'Item2'];
+const availableItems = items.map(name => ({name: name,available: true}));
+console.log(availableItems);
+// Output: [{ name: 'Item1', available: true }, { name: 'Item2', available: true }]
+
+
+/* 10. Price to Text Format
+ [499, 899] → ['Price: ₹499', 'Price: ₹899'] */
+
+const pricess = [499, 899];
+const priceTexts = pricess.map(price => `Price: ₹${price}`);
+console.log(priceTexts);
+// Output: ['Price: ₹499', 'Price: ₹899']
+
+/* 11. Append Batch Year
+ ['Amit', 'Neha'] → ['Amit - 2020', 'Neha - 2020'] */
+
+ const names = ['Amit', 'Neha'];
+const batchYearNames = names.map(name => `${name} - 2020`);
+console.log(batchYearNames);
+// Output: ['Amit - 2020', 'Neha - 2020']
 

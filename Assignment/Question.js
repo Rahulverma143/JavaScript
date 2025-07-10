@@ -32,3 +32,10 @@ pallindrome ? console.log("yes") : console.log("no");
  console.log(senarr);
  const revsen = senarr.map((s) => s.split("").reverse().join(""));
  console.log(revsen);
+
+//  ----------------------------------------------------
+
+ const arr = ["apple", 11212, "banana", 14, "kiwi", 856, "rose", 4785];
+ const numarr = arr.filter((ele) => typeof ele === "number").reverse();
+ const res = arr.map((ele) => (typeof ele === "number" ? numarr.shift() : ele));
+ console.log(res);
