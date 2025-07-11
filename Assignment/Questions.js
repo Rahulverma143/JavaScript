@@ -167,7 +167,31 @@ console.log(capitalizedClients);
 /* 18. Format Client Codes
  ['C01', 'C02'] → ['CLIENT-C01', 'CLIENT-C02'] */
 
- const client = ['C01', 'C02'];
-client.map()
-const currentDate = new Date();
-// console.log(currentdate);
+ const clientCodes = ['C01', 'C02'];
+const formatCodes = clientCodes.map(code => 'CLIENT-' + code);
+console.log(formatCodes);
+
+/* 19 . Transform Invoices to PDF links
+ [301, 302] → ['/invoices/301.pdf', '/invoices/302.pdf'] */
+
+const invoices = [301, 302];
+const pdfLinks = invoices.map(id => `/invoices/${id}.pdf`);
+console.log(pdfLinks);
+
+/* 20 . Add Department Info
+ ['John', 'Mira'] → ['John - Sales', 'Mira - Sales'] */
+
+const Name = ['John', 'Mira'];
+const updatedList = Name.map(name => name + ' - Sales');
+console.log(updatedList);
+
+
+/* Employee IDs to Short Format
+ ['EMP001', 'EMP002'] → ['001', '002'] */
+
+const ids = ['EMP001', 'EMP002'];
+const employeesIds = ids.map(emp => `Employee Code: ${emp}`);
+console.log(employeesIds);
+
+
+
