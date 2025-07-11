@@ -49,7 +49,7 @@ Let, Const and Var:
 3. Scope => JavaScript me 2 trike ka  scope hota hai (Two types of Scope in JavaScript)
 Global and Local scope 
 
-i) Global scope ko vanilla JS me window object bolta hai  aur node js me System object bolta hai.
+// i) Global scope ko vanilla JS me window object bolta hai  aur node js me System object bolta hai.------------------------
 
 Function Scope => Functin scope ka ander bna variables sirf usi function tak hi access ke skta hai aur function accessibility area ko stack kheta hai.
 
