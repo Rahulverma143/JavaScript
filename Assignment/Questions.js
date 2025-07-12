@@ -171,6 +171,13 @@ console.log(capitalizedClients);
 const formatCodes = clientCodes.map(code => 'CLIENT-' + code);
 console.log(formatCodes);
 
+
+// const names = ['Rita kumar', 'Anil Roy'];
+// const emails = names.map(name => {
+//   const email = name.toLowerCase().replace(" ", ".");
+//   return `${email}@company.com`;
+// });
+// console.log(emails);
 /* 19 . Transform Invoices to PDF links
  [301, 302] → ['/invoices/301.pdf', '/invoices/302.pdf'] */
 
