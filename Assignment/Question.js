@@ -64,97 +64,97 @@
 // const onlineDoctors = doctors.filter(doctor => doctor.onlineConsultation);
 // console.log(onlineDoctors);
 
-// // // // --------------------------------------------------------------------
-// // // // 3. 
+// --------------------------------------------------------------------
+// 3. 
 
-// // // const employees = [
-// // //   { id: 1, name: "Isha", joinedOn: "2025-12-31" },
-// // //   { id: 2, name: "Arjun", joinedOn: "2025-01-10" },
-// // //   { id: 3, name: "Sneha", joinedOn: "2024-11-15" },
-// // //   { id: 4, name: "Dev", joinedOn: "2025-02-01" }
-// // // ];
-// // // let julyjoined = employees.filter((emp)=>emp.joinedOn > "2025-07-01");
-// // // console.log(julyjoined);
-
-
-// // // // ------------------------------------------------------
-
-// // // const events = [
-// // //   { id: 1, name: "Workshop", date: "2025-04-26" }, 
-// // //   { id: 2, name: "Hackathon", date: "2025-04-27" }, 
-// // //   { id: 3, name: "Seminar", date: "2025-04-25" },
-// // //   { id: 4, name: "Webinar", date: "2025-04-28" } 
-// // // ];
-// // // let weekendevents =  events.filter((e)=> 
-// // // {
-// // //     let day = new Date(e.date).getDay();
-// // //     return day === 0 || day === 6;
-// // // });
-// // // console.log(weekendevents);
+// const employees = [
+//   { id: 1, name: "Isha", joinedOn: "2025-12-31" },
+//   { id: 2, name: "Arjun", joinedOn: "2025-01-10" },
+//   { id: 3, name: "Sneha", joinedOn: "2024-11-15" },
+//   { id: 4, name: "Dev", joinedOn: "2025-02-01" }
+// ];
+// let julyjoined = employees.filter((emp)=>emp.joinedOn > "2025-07-01");
+// console.log(julyjoined);
 
 
-// // // // ---------------------------------------------------------
+// ------------------------------------------------------
 
-// // const subscriptions = [
-// //     { id: 1, user: "Kiran", expiresOn: "2025-04-24" },
-// //     { id: 2, user: "Rajat", expiresOn: "2025-04-30" },
-// //     { id: 3, user: "Simran", expiresOn: "2025-05-02" },
-// //     { id: 4, user: "Ajay", expiresOn: "2025-04-23" }
-// // ];
-// // let currentdate = new Date("2025-04-23");
-// // let next7day = new Date(currentdate);
-// // next7day.setDate(currentdate.getDate() + 7);
-// // next7day = currentdate.toISOString().split("T")[0];
-// // currentdate = currentdate.toISOString().split("T")[0];
-// // console.log(next7day);
+// const events = [
+//   { id: 1, name: "Workshop", date: "2025-04-26" }, 
+//   { id: 2, name: "Hackathon", date: "2025-04-27" }, 
+//   { id: 3, name: "Seminar", date: "2025-04-25" },
+//   { id: 4, name: "Webinar", date: "2025-04-28" } 
+// ];
+// let weekendevents =  events.filter((e)=> 
+// {
+//     let day = new Date(e.date).getDay();
+//     return day === 0 || day === 6;
+// });
+// console.log(weekendevents);
 
 
-// // const notifiedusers = subscriptions.filter(
-// //     (sub) => sub.expiresOn >= currentdate && sub.expiresOn <=next7day
-// // );
-// // console.log(notifiedusers);
+// ---------------------------------------------------------
 
-// // // ------------------------------------------------------------
+// const subscriptions = [
+//     { id: 1, user: "Kiran", expiresOn: "2025-04-24" },
+//     { id: 2, user: "Rajat", expiresOn: "2025-04-30" },
+//     { id: 3, user: "Simran", expiresOn: "2025-05-02" },
+//     { id: 4, user: "Ajay", expiresOn: "2025-04-23" }
+// ];
+// let currentdate = new Date("2025-04-23");
+// let next7day = new Date(currentdate);
+// next7day.setDate(currentdate.getDate() + 7);
+// next7day = currentdate.toISOString().split("T")[0];
+// currentdate = currentdate.toISOString().split("T")[0];
+// console.log(next7day);
 
-// // const employees = [
-// //   { name: "Ravi", joinedOn: "2024-06-15" },
-// //   { name: "Sneha", joinedOn: "2023-07-09" },
-// //   { name: "Ayan", joinedOn: "2025-01-01" }
-// // ];
 
-// // const today = new Date("2025-07-10");
+// const notifiedusers = subscriptions.filter(
+//     (sub) => sub.expiresOn >= currentdate && sub.expiresOn <=next7day
+// );
+// console.log(notifiedusers);
 
-// // const completedOneYear = employees.filter(emp => {
-// //   const joinedDate = new Date(emp.joinedOn);
-// //   const diffInTime = today - joinedDate;
-// //   const diffInDays = diffInTime / (1000 * 60 * 60 * 24);
-// //   return diffInDays >= 365;
-// // });
+// ------------------------------------------------------------
+
+// const employees = [
+//   { name: "Ravi", joinedOn: "2024-06-15" },
+//   { name: "Sneha", joinedOn: "2023-07-09" },
+//   { name: "Ayan", joinedOn: "2025-01-01" }
+// ];
+
+// const today = new Date("2025-07-10");
+
+// const completedOneYear = employees.filter(emp => {
+//   const joinedDate = new Date(emp.joinedOn);
+//   const diffInTime = today - joinedDate;
+//   const diffInDays = diffInTime / (1000 * 60 * 60 * 24);
+//   return diffInDays >= 365;
+// });
 
 // // console.log(completedOneYear);
 
 
-// // // ----------------------------------------------
+// ----------------------------------------------
 
-// // const employees = [
-// //   { name: "Kriti", joinedOn: "2022-05-01" },
-// //   { name: "Dev", joinedOn: "2024-03-12" },
-// //   { name: "Ayan", joinedOn: "2021-06-10" }
-// // ];
+// const employees = [
+//   { name: "Kriti", joinedOn: "2022-05-01" },
+//   { name: "Dev", joinedOn: "2024-03-12" },
+//   { name: "Ayan", joinedOn: "2021-06-10" }
+// ];
 
-// // const today = new Date("2025-07-10");
+// const today = new Date("2025-07-10");
 
-// // const count = employees.filter(emp => {
-// //   const joinedDate = new Date(emp.joinedOn);
-// //   const diffInTime = today - joinedDate;
-// //   const diffInYears = diffInTime / (1000 * 60 * 60 * 24 * 365);
-// //   return diffInYears > 2;
-// // }).length;
+// const count = employees.filter(emp => {
+//   const joinedDate = new Date(emp.joinedOn);
+//   const diffInTime = today - joinedDate;
+//   const diffInYears = diffInTime / (1000 * 60 * 60 * 24 * 365);
+//   return diffInYears > 2;
+// }).length;
 
-// // console.log("Employees with more than 2 years tenure:", count);
+// console.log("Employees with more than 2 years tenure:", count);
 
 
-// // ---------------------------------------
+// ---------------------------------------
 // const employes = [
 //   { name: "Kriti", joinedOn: "2022-05-01" },
 //   { name: "Dev", joinedOn: "2024-03-12" },
@@ -163,13 +163,13 @@
 //   { name: "Verma", joinedOn: "2025-07-11" }, 
 //   { name: "Devansh", joinedOn: "2026-16-02" }
 // ];
-// // const today = new Date().getFullYear();
-// // console.log(today);
-// // console.log(typeof today);
-// // const yesterday = new Date().getFullYear();
-// // console.log(today);
-// // const days = today - yesterday;
-// // console.log(days);
+// const today = new Date().getFullYear();
+// console.log(today);
+// console.log(typeof today);
+// const yesterday = new Date().getFullYear();
+// console.log(today);
+// const days = today - yesterday;
+// console.log(days);
 
 // const count = employes.filter(emp => {
 //    const joinedDate = new Date(emp.joinedOn);
