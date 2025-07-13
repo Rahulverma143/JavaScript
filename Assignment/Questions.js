@@ -181,9 +181,9 @@ console.log(formatCodes);
 /* 19 . Transform Invoices to PDF links
  [301, 302] → ['/invoices/301.pdf', '/invoices/302.pdf'] */
 
-const invoices = [301, 302];
-const pdfLinks = invoices.map(id => `/invoices/${id}.pdf`);
-console.log(pdfLinks);
+// const invoices = [301, 302];
+// const pdfLinks = invoices.map(id => `/invoices/${id}.pdf`);
+// console.log(pdfLinks);
 
 /* 20 . Add Department Info
  ['John', 'Mira'] → ['John - Sales', 'Mira - Sales'] */
