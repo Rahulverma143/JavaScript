@@ -188,9 +188,9 @@ console.log(pdfLinks);
 /* 20 . Add Department Info
  ['John', 'Mira'] → ['John - Sales', 'Mira - Sales'] */
 
-const Name = ['John', 'Mira'];
-const updatedList = Name.map(name => name + ' - Sales');
-console.log(updatedList);
+// const Name = ['John', 'Mira'];
+// const updatedList = Name.map(name => name + ' - Sales');
+// console.log(updatedList);
 
 
 /* Employee IDs to Short Format
