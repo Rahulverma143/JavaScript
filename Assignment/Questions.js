@@ -172,28 +172,23 @@ const formatCodes = clientCodes.map(code => 'CLIENT-' + code);
 console.log(formatCodes);
 
 
-// const names = ['Rita kumar', 'Anil Roy'];
-// const emails = names.map(name => {
-//   const email = name.toLowerCase().replace(" ", ".");
-//   return `${email}@company.com`;
-// });
-// console.log(emails);
+
 /* 19 . Transform Invoices to PDF links
  [301, 302] → ['/invoices/301.pdf', '/invoices/302.pdf'] */
 
-// const invoices = [301, 302];
-// const pdfLinks = invoices.map(id => `/invoices/${id}.pdf`);
-// console.log(pdfLinks);
+const invoices = [301, 302];
+const pdfLinks = invoices.map(id => `/invoices/${id}.pdf`);
+console.log(pdfLinks);
 
 /* 20 . Add Department Info
  ['John', 'Mira'] → ['John - Sales', 'Mira - Sales'] */
 
-// const Name = ['John', 'Mira'];
-// const updatedList = Name.map(name => name + ' - Sales');
-// console.log(updatedList);
+const Name = ['John', 'Mira'];
+const updatedList = Name.map(name => name + ' - Sales');
+console.log(updatedList);
 
 
-/* Employee IDs to Short Format
+/* 21.Employee IDs to Short Format
  ['EMP001', 'EMP002'] → ['001', '002'] */
 
 const ids = ['EMP001', 'EMP002'];
@@ -201,4 +196,156 @@ const employeesIds = ids.map(emp => `Employee Code: ${emp}`);
 console.log(employeesIds);
 
 
+/* 22. Generate Work Email IDs
+ ['Rita Kumar', 'Anil Roy'] → ['rita.kumar@company.com', 'anil.roy@company.com']
+const names = ['Rita kumar', 'Anil Roy'];*/
 
+const emailss = names.map(name => {
+  const email = name.toLowerCase().replace(" ", ".");
+  return `${email}@company.com`;
+});
+console.log(emailss);
+
+// Q24
+// Salary Amount to Text
+//  [45000, 52000] → ['₹45000', '₹52000']
+
+// const salary= [45000, 52000];
+// const Amountext=salary.map(s=>`₹${s}`);
+// console.log(Amountext);
+
+// Q25)
+/*
+All Employees to Active Status
+ ['Ankita', 'Suraj'] → [{ name: 'Ankita', status: 'active' }, { name: 'Suraj', status: 'active' }]
+  */
+//  const user= ['Ankita', 'Suraj'];
+//  const usersStatus=user.map(u=>({
+//   name:u,
+//   status:'active'
+//  }))
+//  console.log(usersStatus)
+
+
+// Q26)
+/*
+Add Unit Type to Property
+ ['Green Villa', 'Oak Tower'] → ['Green Villa - Apartment', 'Oak Tower - Apartment']
+*/
+// const Property= ['Green Villa', 'Oak Tower'];
+// const typeOfProp=Property.map(p=>`${p} - Apartment`);
+// console.log(typeOfProp);
+
+// Q27)
+// Convert Rent Price to Monthly Format
+//  [15000, 20000] → ['₹15000/month', '₹20000/month']
+// const rent=[15000, 20000];
+// const format=rent.map(r=>`₹${r}/month`);
+// console.log(format)
+
+// Q28)
+// Add Default Furnishing Status
+//  ['Flat 1', 'Flat 2'] → [{ name: 'Flat 1', furnished: false }, { name: 'Flat 2', furnished: false }]
+// const Flat=['Flat 1', 'Flat 2'];
+// const isFurnished=Flat.map(f=>({
+//   name:f,
+//   furnished:"false"
+// }));
+// console.log(isFurnished);
+
+
+// Q29)
+// Property Listing Link Creation
+//  ['P001', 'P002'] → ['/properties/P001', '/properties/P002']
+
+// const property= ['P001', 'P002'];
+// const link=property.map(l=>`/properties/${l}`);
+// console.log(link);
+
+// Q30)
+// Attach Available From Date
+//  ['Unit A', 'Unit B'] → ['Unit A - Available from 1st May', 'Unit B - Available from 1st May']
+// const attach=['Unit A', 'Unit B'];
+// const isAvailable=attach.map(e=>`${e}-Available from 1st May`);
+// console.log(isAvailable)
+
+// Q31)
+// Tracking Code Formatting
+//  ['TR123', 'TR456'] → ['Tracking: TR123', 'Tracking: TR456']
+// const track=['TR123', 'TR456'];
+// const codeformating=track.map(t=>`Tracking: ${t}`);
+// console.log(codeformating);
+
+// Q32)
+// Mark Shipments as Pending
+//  [1001, 1002] → [{ id: 1001, status: 'Pending' }, { id: 1002, status: 'Pending' }]
+// const shipment=[1001, 1002];
+// const shipmentStatus=shipment.map(M=>({
+//   id:M,
+//   status:"pending"
+// }))
+// console.log(shipmentStatus)
+
+// Q33)
+/*
+Add Delivery Region Tag
+ ['Order A', 'Order B'] → ['Order A - North Zone', 'Order B - North Zone']
+*/
+// const order= ['Order A', 'Order B'];
+// const DeliveryRegion=order.map(o=>`${o}- North Zone`)
+// console.log(DeliveryRegion);
+
+/* 34. Expected Delivery Time Format
+ [2, 4] → ['2 days', '4 days'] */
+ 
+const day=  [2, 4];
+const DeliveryTime=day.map(d=>`${d} days`);
+console.log(DeliveryTime);
+
+
+/*35. Create Shipment URLs
+ ['SHIP001', 'SHIP002'] → ['/track/SHIP001', '/track/SHIP002'] */ 
+
+const shipment=['SHIP001', 'SHIP002'];
+const shipmentUrl=shipment.map(s=>`/track/${s}`);
+console.log(shipmentUrl)
+
+
+/*36. Convert Integer Array to Boolean Flags
+ [0, 1, 0] → [false, true, false] */
+
+const int=[0, 1, 0] ;
+const intToBool=int.map(e=>e==1);
+console.log(intToBool);
+
+/*37 Capitalize First Character in Each String
+ ['alpha', 'beta'] → ['Alpha', 'Beta']*/
+
+const charArr=['alpha', 'beta'];
+const upperchar=charArr.map(e=>e.toUpperCase());
+console.log(upperchar);
+
+
+/*38. Add Index to Array Values
+ ['a', 'b'] → ['0: a', '1: b']*/
+
+const arr= ['a', 'b'];
+const indeArr=arr.map((e,i)=>`${i}:${e}`);
+console.log(indeArr);
+
+
+ /*39/. Attach Country Code
+ ['1234567890', '9876543210'] → ['+91-1234567890', '+91-9876543210']*/
+
+const number= ['1234567890', '9876543210'];
+const Countrycode=number.map(num=>`+91-${num}`);
+console.log(Countrycode)
+
+
+
+/*40Convert Product Titles to Slugs
+ ['Red Shirt', 'Blue Jeans'] → ['red-shirt', 'blue-jeans'] */ 
+
+const product=['Red Shirt', 'Blue Jeans'];
+const slugs=product.map(p=>p.replace(' ','-').toLowerCase());
+console.log(slugs)
