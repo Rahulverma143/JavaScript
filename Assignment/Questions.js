@@ -206,98 +206,92 @@ const emailss = names.map(name => {
 });
 console.log(emailss);
 
-// Q24
-// Salary Amount to Text
-//  [45000, 52000] → ['₹45000', '₹52000']
+/* 24. Salary Amount to Text
+ [45000, 52000] → ['₹45000', '₹52000']*/ 
 
-// const salary= [45000, 52000];
-// const Amountext=salary.map(s=>`₹${s}`);
-// console.log(Amountext);
-
-// Q25)
-/*
-All Employees to Active Status
- ['Ankita', 'Suraj'] → [{ name: 'Ankita', status: 'active' }, { name: 'Suraj', status: 'active' }]
-  */
-//  const user= ['Ankita', 'Suraj'];
-//  const usersStatus=user.map(u=>({
-//   name:u,
-//   status:'active'
-//  }))
-//  console.log(usersStatus)
+const salary= [45000, 52000];
+const Amountext=salary.map(s=>`₹${s}`);
+console.log(Amountext);
 
 
-// Q26)
-/*
-Add Unit Type to Property
- ['Green Villa', 'Oak Tower'] → ['Green Villa - Apartment', 'Oak Tower - Apartment']
-*/
-// const Property= ['Green Villa', 'Oak Tower'];
-// const typeOfProp=Property.map(p=>`${p} - Apartment`);
-// console.log(typeOfProp);
-
-// Q27)
-// Convert Rent Price to Monthly Format
-//  [15000, 20000] → ['₹15000/month', '₹20000/month']
-// const rent=[15000, 20000];
-// const format=rent.map(r=>`₹${r}/month`);
-// console.log(format)
-
-// Q28)
-// Add Default Furnishing Status
-//  ['Flat 1', 'Flat 2'] → [{ name: 'Flat 1', furnished: false }, { name: 'Flat 2', furnished: false }]
-// const Flat=['Flat 1', 'Flat 2'];
-// const isFurnished=Flat.map(f=>({
-//   name:f,
-//   furnished:"false"
-// }));
-// console.log(isFurnished);
+/*25. All Employees to Active Status
+ ['Ankita', 'Suraj'] → [{ name: 'Ankita', status: 'active' }, { name: 'Suraj', status: 'active' }] */
+  
+ const user= ['Ankita', 'Suraj'];
+ const usersStatus=user.map(u=>({
+  name:u,
+  status:'active'
+ }))
+ console.log(usersStatus)
 
 
-// Q29)
-// Property Listing Link Creation
-//  ['P001', 'P002'] → ['/properties/P001', '/properties/P002']
 
-// const property= ['P001', 'P002'];
-// const link=property.map(l=>`/properties/${l}`);
-// console.log(link);
+/* 26. Add Unit Type to Property
+ ['Green Villa', 'Oak Tower'] → ['Green Villa - Apartment', 'Oak Tower - Apartment'] */
 
-// Q30)
-// Attach Available From Date
-//  ['Unit A', 'Unit B'] → ['Unit A - Available from 1st May', 'Unit B - Available from 1st May']
-// const attach=['Unit A', 'Unit B'];
-// const isAvailable=attach.map(e=>`${e}-Available from 1st May`);
-// console.log(isAvailable)
+const Property= ['Green Villa', 'Oak Tower'];
+const typeOfProp=Property.map(p=>`${p} - Apartment`);
+console.log(typeOfProp);
 
-// Q31)
-// Tracking Code Formatting
-//  ['TR123', 'TR456'] → ['Tracking: TR123', 'Tracking: TR456']
-// const track=['TR123', 'TR456'];
-// const codeformating=track.map(t=>`Tracking: ${t}`);
-// console.log(codeformating);
+/* 27. Convert Rent Price to Monthly Format
+ [15000, 20000] → ['₹15000/month', '₹20000/month'] */
 
-// Q32)
-// Mark Shipments as Pending
-//  [1001, 1002] → [{ id: 1001, status: 'Pending' }, { id: 1002, status: 'Pending' }]
-// const shipment=[1001, 1002];
-// const shipmentStatus=shipment.map(M=>({
-//   id:M,
-//   status:"pending"
-// }))
-// console.log(shipmentStatus)
+const rent=[15000, 20000];
+const format=rent.map(r=>`₹${r}/month`);
+console.log(format)
 
-// Q33)
-/*
-Add Delivery Region Tag
- ['Order A', 'Order B'] → ['Order A - North Zone', 'Order B - North Zone']
-*/
-// const order= ['Order A', 'Order B'];
-// const DeliveryRegion=order.map(o=>`${o}- North Zone`)
-// console.log(DeliveryRegion);
+/* 28. Add Default Furnishing Status
+ ['Flat 1', 'Flat 2'] → [{ name: 'Flat 1', furnished: false }, { name: 'Flat 2', furnished: false }] */
+
+const Flat=['Flat 1', 'Flat 2'];
+const isFurnished=Flat.map(f=>({
+  name:f,
+  furnished:"false"
+}));
+console.log(isFurnished);
+
+
+/* 29. Property Listing Link Creation
+ ['P001', 'P002'] → ['/properties/P001', '/properties/P002'] */
+
+const property= ['P001', 'P002'];
+const link=property.map(l=>`/properties/${l}`);
+console.log(link);
+
+ /*30. Attach Available From Date
+ ['Unit A', 'Unit B'] → ['Unit A - Available from 1st May', 'Unit B - Available from 1st May'] */
+
+const attach=['Unit A', 'Unit B'];
+const isAvailable=attach.map(e=>`${e}-Available from 1st May`);
+console.log(isAvailable)
+
+ /*Q31. Tracking Code Formatting
+ ['TR123', 'TR456'] → ['Tracking: TR123', 'Tracking: TR456'] */
+
+const track=['TR123', 'TR456'];
+const codeformating=track.map(t=>`Tracking: ${t}`);
+console.log(codeformating);
+
+/* 32. Mark Shipments as Pending
+ [1001, 1002] → [{ id: 1001, status: 'Pending' }, { id: 1002, status: 'Pending' }] */
+
+const shipments=[1001, 1002];
+const shipmentStatus=shipments.map(M=>({
+  id:M,
+  status:"pending"
+}))
+console.log(shipmentStatus)
+
+/* 33.  Add Delivery Region Tag
+ ['Order A', 'Order B'] → ['Order A - North Zone', 'Order B - North Zone'] */
+
+const order= ['Order A', 'Order B'];
+const DeliveryRegion=order.map(o=>`${o}- North Zone`)
+console.log(DeliveryRegion);
 
 /* 34. Expected Delivery Time Format
  [2, 4] → ['2 days', '4 days'] */
- 
+
 const day=  [2, 4];
 const DeliveryTime=day.map(d=>`${d} days`);
 console.log(DeliveryTime);
